@@ -1,17 +1,25 @@
-import "./App.css";
-import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import { MessageProvider } from "./contexts/MessageContext";
+import Footer from "./components/footer/Footer";
 import Message from "./components/message/Message";
+import Products from "./components/products/products";
+
+import { MessageContext } from "./contexts/MessageContext";
+import { CategoriasContext } from "./contexts/CategoriasContext";
+
 function App() {
   return (
-    <div className="App">
-      <MessageProvider>
+    <>
+      <MessageContext>
         <Message />
-        <Header></Header>
-        <Footer></Footer>
-      </MessageProvider>
-    </div>
+
+        <CategoriasContext>
+          <Header />
+        </CategoriasContext>
+        <Products />
+      </MessageContext>
+
+      <Footer></Footer>
+    </>
   );
 }
 
