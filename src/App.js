@@ -1,25 +1,21 @@
-import Header from "./components/header/Header";
+import "./App.css";
 import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import { MessageProvider } from "./contexts/MessageContext";
 import Message from "./components/message/Message";
+import React from "react";
+
 import Products from "./components/products/products";
-
-import { MessageContext } from "./contexts/MessageContext";
-import { CategoriasContext } from "./contexts/CategoriasContext";
-
 function App() {
   return (
-    <>
-      <MessageContext>
+    <div className="App">
+      <MessageProvider>
         <Message />
-
-        <CategoriasContext>
-          <Header />
-        </CategoriasContext>
+        <Header></Header>
         <Products />
-      </MessageContext>
-
-      <Footer></Footer>
-    </>
+        <Footer></Footer>
+      </MessageProvider>
+    </div>
   );
 }
 
