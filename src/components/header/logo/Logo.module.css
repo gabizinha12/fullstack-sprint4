@@ -1,0 +1,95 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.logo__img {
+  height: 25px;
+  transform: translateY(10px);
+}
+.contentMobile {
+  display: none;
+}
+
+.mobileDrawer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+  color: #d3d3d3;
+
+  border: none;
+
+  padding: 12px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: background 0.2s;
+
+  font-size: 0.8rem;
+}
+
+.mobileDrawer:hover {
+  background: #eee;
+}
+
+.drawerClose {
+  display: none;
+}
+
+.logoTitle {
+  color: #333;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 48rem) {
+  .logo {
+    justify-content: space-between;
+  }
+
+  .contentMobile {
+    display: block;
+  }
+
+  .drawerOpen {
+    display: flex;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 75rem) {
+  .logo {
+    justify-content: space-between;
+  }
+
+  .contentMobile {
+    display: block;
+  }
+
+  .drawerOpen {
+    display: flex;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
