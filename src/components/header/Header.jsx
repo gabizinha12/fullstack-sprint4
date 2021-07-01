@@ -1,5 +1,6 @@
-import React from "react";
-
+import React, { useContext, useEffect } from "react";
+import { CategoriasContext } from "../../contexts/CategoriasContext";
+import { useFetch } from "../../hooks/useFetch";
 // icons
 import MenuIcon from "../../assets/menu.svg";
 import CloseIcon from "../../assets/close.svg";
@@ -12,6 +13,19 @@ import "./Header.css";
 import Menu from "../menu/menu";
 
 function Header() {
+  const categoriasData = useContext(CategoriasContext);
+  const { categorias, setCategorias } = categoriasData;
+  const [response, loading, error] = useFetch(
+    "http://localhost:3000/data/categories.json"
+  );
+
+  useEffect(() => {
+    setCategorias({
+      ...categorias,
+      all: response ? response.all : [],
+      current: response ? response.current : [],
+    });
+  }, [response, error]);
   return (
     <header class="header">
       <div class="header__container">

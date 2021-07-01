@@ -1,4 +1,5 @@
 import FilterItem from "../filterItem/filterItem";
+import React from "react";
 
 const data = {
   filters: [
