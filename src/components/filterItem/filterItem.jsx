@@ -1,5 +1,4 @@
 import FilterIcon from "../../assets/filter.svg";
-import React from "react";
 
 function FilterItem({ label }) {
   return (

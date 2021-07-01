@@ -1,5 +1,3 @@
-import React from "react";
-
 function BreadcrumbItem({ value }) {
   return (
     <li class="breadcrumbs__item breadcrumbs__item--active">

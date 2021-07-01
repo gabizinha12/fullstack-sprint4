@@ -1,5 +1,4 @@
 import BreadcrumbItem from "../breadcrumbItem/breadcrumItem";
-import React from "react";
 
 const breadcrumbItems = ["Home", "Infatil", "Personagens", "Mario Bros"];
 
@@ -14,10 +13,10 @@ function Breadcrumbs() {
             }
 
             return (
-              <div>
+              <>
                 <BreadcrumbItem key={index} value={breadcrumb} />
                 <li className="breadcrumbs__item  breadcrumbs__separator">/</li>
-              </div>
+              </>
             );
           })}
         </ol>

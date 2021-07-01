@@ -1,16 +1,97 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import MenuItem from "./menuItem/menuItem";
 
-import { CategoriasContext } from "../../contexts/CategoriasContext";
+const categorias = {
+  all: [
+    {
+      id: 1,
+      label: "Novidades",
+      link: "#home",
+    },
+    {
+      id: 2,
+      label: "Feminino",
+      link: "#home",
+    },
+    {
+      id: 3,
+      label: "Masculino",
+      link: "#home",
+    },
+    {
+      id: 4,
+      label: "Infantil",
+      link: "#home",
+    },
+    {
+      id: 5,
+      label: "Moda Íntima",
+      link: "#home",
+    },
+    {
+      id: 6,
+      label: "Calçados",
+      link: "#home",
+    },
+    {
+      id: 7,
+      label: "Acessórios e Relógios",
+      link: "#home",
+    },
+    {
+      id: 8,
+      label: "Beleza e Perfume",
+      link: "#home",
+    },
+    {
+      id: 9,
+      label: "Casa Riachuelo",
+      link: "#home",
+    },
+    {
+      id: 10,
+      label: "Eletrônicos",
+      link: "#home",
+    },
+    {
+      id: 11,
+      label: "Personagens",
+      link: "#home",
+    },
+    {
+      id: 12,
+      label: "Outlet",
+      link: "#home",
+    },
+  ],
+  current: [
+    {
+      id: 1,
+      link: "#home",
+      name: "Home",
+    },
+    {
+      id: 2,
+      link: "#home",
+      name: "Infantil",
+    },
+    {
+      id: 3,
+      link: "#home",
+      name: "Personagens",
+    },
+    {
+      id: 4,
+      name: "Mario Bros",
+    },
+  ],
+};
 
 function Menu() {
-  const contextCategoria = useContext(CategoriasContext);
-  const { categorias } = contextCategoria;
-
   return (
-    <nav className="header__menu menu">
-      <ul className="menu__list">
+    <nav class="header__menu menu">
+      <ul class="menu__list">
         {categorias.all.map((el) => (
           <MenuItem key={el.id} label={el.label} link={el.link} />
         ))}

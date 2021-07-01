@@ -1,3 +1,5 @@
+import React from 'react'
+
 import GooglePlayIcon from "../../assets/google-play.webp";
 import AppStoreIcon from "../../assets/app-store.webp";
 import CartCreditIcon from "../../assets/ico-invoice-and-statement.svg";
@@ -22,7 +24,6 @@ import YoutubeIcon from "../../assets/ico-youtube.svg";
 import LinkedinIcon from "../../assets/ico-linkedin.svg";
 import AcessibilityIcon from "../../assets/ico-a11y.webp";
 import CertificatedIcon from "../../assets/ra1000.webp";
-import React from "react";
 
 // styles
 import "./Footer.css";
@@ -45,14 +46,14 @@ export default function Footer() {
           </form>
           <p className="contact__msg-app">Baixe nosso App</p>
           <div className="apps">
-            <a href="#">
+            <a href="/">
               <img
                 className="apps__img"
                 src={GooglePlayIcon}
                 alt="Google Play"
               />
             </a>
-            <a href="#">
+            <a href="/">
               <img className="apps__img" src={AppStoreIcon} alt="App Store" />
             </a>
           </div>
@@ -62,7 +63,7 @@ export default function Footer() {
         <div className="footer__container links">
           <div className="links__contacts">
             <div className="col">
-              <a href="#" className="contact-icon">
+              <a href="/" className="contact-icon">
                 <img
                   className="contact-icon__img"
                   src={AtendimentoIcon}
@@ -70,7 +71,7 @@ export default function Footer() {
                 />
                 <p className="contact-icon__text">Atendimento</p>
               </a>
-              <a href="#" className="contact-icon">
+              <a href="/" className="contact-icon">
                 <img
                   className="contact-icon__img"
                   src={FaqIcon}
@@ -80,7 +81,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="col">
-              <a href="#" className="contact-icon">
+              <a href="/" className="contact-icon">
                 <img
                   className="contact-icon__img"
                   src={CartCreditIcon}
@@ -88,7 +89,7 @@ export default function Footer() {
                 />
                 <p className="contact-icon__text">Fatura e Extrato</p>
               </a>
-              <a href="#" className="contact-icon">
+              <a href="/" className="contact-icon">
                 <img
                   className="contact-icon__img"
                   src={WorkWithUsIcon}
@@ -104,22 +105,22 @@ export default function Footer() {
               <h3 className="company-links__title">Cartão Riachuelo</h3>
               <ul>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Midway Financeira
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Saiba como adquirir
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Veja sua fatura e extrato
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Buscando quitar suas dívidas?
                   </a>
                 </li>
@@ -131,56 +132,55 @@ export default function Footer() {
               <ul>
                 <li
                   className="company-links__item"
-                  className="company-links__item"
                 >
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     A Empresa
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Portal de Fornecedores
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Relação com Investidores
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Assessoria de Imprensa
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Trabalhe Conosco
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Programa Jovem Aprendiz
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Cadastro de Startups
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     {" "}
                     Mapa do Site{" "}
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     {" "}
                     Guide Shop{" "}
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Venda na Riachuelo Marketplace
                   </a>
                 </li>
@@ -191,27 +191,27 @@ export default function Footer() {
               <h3 className="company-links__title">Moda que Transforma</h3>
               <ul>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Na prática
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Entre Costuras
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Jeans Mais Transparente
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Ações Covid-19
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Free Free
                   </a>
                 </li>
@@ -221,37 +221,37 @@ export default function Footer() {
               <h3 className="company-links__title">Ajuda</h3>
               <ul>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Atendimento
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Perguntas Frequentes
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Trocas e Devoluções
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Portal da Privacidade
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Política de Privacidade
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Termos e Condições de Uso
                   </a>
                 </li>
                 <li className="company-links__item">
-                  <a className="company-links__text" href="#">
+                  <a className="company-links__text" href="/">
                     Regras e Resultados de Sorteios
                   </a>
                 </li>
@@ -280,39 +280,39 @@ export default function Footer() {
             <h3 class="payment__title">Siga a Riachuelo</h3>
             <div class="social__icons">
               <div class="social__icon icon">
-                <a href="#">
+                <a href="/">
                   <img class="icon__img" src={FacebookIcon} alt="" />
                 </a>
               </div>
               <div class="social__icon icon">
-                <a href="#">
+                <a href="/">
                   <img class="icon__img" src={InstagramIcon} alt="" />
                 </a>
                 <p class="icon__text">RCHLO</p>
               </div>
               <div class="social__icon icon">
-                <a href="#">
+                <a href="/">
                   <img class="icon__img" src={InstagramIcon} alt="" />
                 </a>
                 <p class="icon__text">CASA RCHLO</p>
               </div>
               <div class="social__icon icon">
-                <a href="#">
+                <a href="/">
                   <img class="icon__img" src={PinterestIcon} alt="" />
                 </a>
               </div>
               <div class="social__icon icon">
-                <a href="#">
+                <a href="/">
                   <img class="icon__img" src={TwitterIcon} alt="" />
                 </a>
               </div>
               <div class="social__icon icon">
-                <a href="#">
+                <a href="/">
                   <img class="icon__img" src={YoutubeIcon} alt="" />
                 </a>
               </div>
               <div class="social__icon icon">
-                <a href="#">
+                <a href="/">
                   <img class="icon__img" src={LinkedinIcon} alt="" />
                 </a>
               </div>
