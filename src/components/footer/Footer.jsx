@@ -22,6 +22,7 @@ import YoutubeIcon from "../../assets/ico-youtube.svg";
 import LinkedinIcon from "../../assets/ico-linkedin.svg";
 import AcessibilityIcon from "../../assets/ico-a11y.webp";
 import CertificatedIcon from "../../assets/ra1000.webp";
+import React from "react";
 
 // styles
 import "./Footer.css";
