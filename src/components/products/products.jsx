@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useContext, useEffect } from "react";
+import { ProductsContext } from "../../contexts/ProductsContext";
 import Product from "../product/product";
 import Breadcrumbs from "../breadcrumbs/breadcrumbs";
 import Filters from "../filters/filters";
@@ -110,11 +110,15 @@ function Products() {
   const [result, loading, error] = useFetch(
     "http://localhost:3000/data/products.json"
   );
-
-  console.log(result);
-  console.log(loading);
-  console.log(error);
-
+  const produtosData = useContext(ProductsContext);
+  const { produtos, setProdutos } = produtosData;
+  useEffect(() => {
+    setProdutos({
+      ...produtos,
+      products: result ? result.products : [],
+      filters: result ? result.filters : [],
+    });
+  }, [result, error]);
   return (
     <main className="main">
       <Breadcrumbs />
@@ -124,7 +128,7 @@ function Products() {
         <div id="produtosView">
           <div className="products__row">
             <ol className="products__list">
-              {data.products.map((e) => (
+              {produtos.products.map((e) => (
                 <Product
                   description={e.name}
                   price={e.price}

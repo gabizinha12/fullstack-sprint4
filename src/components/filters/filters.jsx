@@ -1,5 +1,6 @@
 import FilterItem from "../filterItem/filterItem";
-import React from "react";
+import React, { useContext } from "react";
+import { ProductsContext } from "../../contexts/ProductsContext";
 
 const data = {
   filters: [
@@ -27,10 +28,12 @@ const data = {
 };
 
 function Filters() {
+  const filterData = useContext(ProductsContext);
+  const { produtos } = filterData;
   return (
     <section class="main__filters filters">
       <ul class="filters__list">
-        {data.filters.map((filter) => (
+        {produtos.filters.map((filter) => (
           <FilterItem label={filter.label} />
         ))}
       </ul>
