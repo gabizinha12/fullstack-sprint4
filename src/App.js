@@ -5,20 +5,27 @@ import Header from "./components/header/Header";
 import { MessageProvider } from "./contexts/MessageContext";
 import { CatgoriasContext } from "./contexts/CategoriasContext";
 import { ProdutosContext } from "./contexts/ProductsContext";
+import { LoadContext } from "./contexts/LoadingContext";
+
 import Message from "./components/message/Message";
 import Products from "./components/products/products";
+import Loading from "./components/loading/loading";
 function App() {
   return (
     <div className="App">
       <ProdutosContext>
-        <CatgoriasContext>
-          <MessageProvider>
-            <Message />
-            <Header></Header>
-            <Products></Products>
-            <Footer></Footer>
-          </MessageProvider>
-        </CatgoriasContext>
+        <LoadContext>
+          <Loading>
+            <CatgoriasContext>
+              <MessageProvider>
+                <Message />
+                <Header></Header>
+                <Products></Products>
+                <Footer></Footer>
+              </MessageProvider>
+            </CatgoriasContext>
+          </Loading>
+        </LoadContext>
       </ProdutosContext>
     </div>
   );
