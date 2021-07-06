@@ -6,7 +6,7 @@ const INITIAL_STATE = {
 export const LoadContext = ({ children }) => {
   const [loading, setLoading] = useState(INITIAL_STATE);
   return (
-    <LoadingContext.Provider value={(loading, setLoading)}>
+    <LoadingContext.Provider value={{ loading, setLoading }}>
       {children}
     </LoadingContext.Provider>
   );

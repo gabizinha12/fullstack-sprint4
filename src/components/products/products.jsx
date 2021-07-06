@@ -9,7 +9,7 @@ import { useFetch } from "../../hooks/useFetch";
 import { LoadingContext } from "../../contexts/LoadingContext";
 
 function Products() {
-  const [result, error, load] = useFetch(
+  const [result, load, error] = useFetch(
     "http://localhost:3000/data/products.json"
   );
   const produtosData = useContext(ProductsContext);
@@ -19,7 +19,7 @@ function Products() {
   const { produtos, setProdutos } = produtosData;
   useEffect(() => {
     setLoading({ ...loading, show: load });
-
+    console.log(load);
     setProdutos({
       ...produtos,
       products: result ? result.products : [],

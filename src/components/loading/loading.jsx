@@ -4,6 +4,7 @@ import "./styles.css";
 function Loading() {
   const contextLoading = useContext(LoadingContext);
   const { loading } = contextLoading;
+  console.log(contextLoading);
 
   return (
     <div className={`loading ${loading.show ? "" : "loading--hide"}`}>

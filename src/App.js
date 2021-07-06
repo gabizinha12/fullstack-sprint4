@@ -15,16 +15,15 @@ function App() {
     <div className="App">
       <ProdutosContext>
         <LoadContext>
-          <Loading>
-            <CatgoriasContext>
-              <MessageProvider>
-                <Message />
-                <Header></Header>
-                <Products></Products>
-                <Footer></Footer>
-              </MessageProvider>
-            </CatgoriasContext>
-          </Loading>
+          <Loading />
+          <CatgoriasContext>
+            <MessageProvider>
+              <Message />
+              <Header></Header>
+              <Products></Products>
+              <Footer></Footer>
+            </MessageProvider>
+          </CatgoriasContext>
         </LoadContext>
       </ProdutosContext>
     </div>
